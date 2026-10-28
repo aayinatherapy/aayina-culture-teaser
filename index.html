@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Three real moments from Eternal. What would you do? A small first look from Aayina Therapy.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Three real moments from Eternal. What would you do?">
+<meta property="og:description" content="A small first look at something Aayina Therapy has prepared.">
+<meta name="theme-color" content="#C8202E">
+<title>Culture in Practice | Aayina Therapy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one column, umbrella first. A red hero shows the 90-day program as a route of five stages. Then the idea in three pillars, the program route as the main interactive piece, real stories, the situation activity as one stage, and the commercial path from pilot to scale. Red is the only accent. */
+:root {
+  --bg: #FBF6F5;
+  --surface: #FFFFFF;
+  --ink: #1D1517;
+  --muted: #5F5557;
+  --line: #EADFDF;
+  --brand: #E23744;
+  --brand-text: #BF1D2B;
+  --btn: #BF1D2B;
+  --btn-ink: #FFFFFF;
+  --tint: #FCEBED;
+  --hero: #C8202E;
+  --hero-ink: #FFFFFF;
+  --hero-soft: #FFE9EB;
+  --deep: #2A1418;
+  --deep-ink: #FBEFF0;
+  --deep-muted: #E3C6CA;
+  --ok: #1B7F4A;
+  --warn: #8A5A00;
+  --far: #B3261E;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #140F10; --surface: #1D1617; --ink: #F6EEEF; --muted: #BCAFB1; --line: #382B2D;
+    --brand: #FF5A68; --brand-text: #FF8791; --btn: #D32F3C; --tint: #261719; --hero: #9E1520;
+    --deep: #0D0809; --ok: #5CC891; --warn: #E5B04E; --far: #FF8D86;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #140F10; --surface: #1D1617; --ink: #F6EEEF; --muted: #BCAFB1; --line: #382B2D;
+  --brand: #FF5A68; --brand-text: #FF8791; --btn: #D32F3C; --tint: #261719; --hero: #9E1520;
+  --deep: #0D0809; --ok: #5CC891; --warn: #E5B04E; --far: #FF8D86;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 60; }
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.1; letter-spacing: -0.015em; }
+h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); font-weight: 800; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 700; }
+h3 { font-size: 1.15rem; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--brand-text); text-underline-offset: 3px; }
+button { font-family: inherit; }
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+[hidden] { display: none !important; }
+.gut { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.col { max-width: 1000px; margin: 0 auto; min-width: 0; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); font-size: 1.08rem; max-width: 62ch; }
+.sec { padding-block: clamp(44px, 7vw, 76px); scroll-margin-top: 90px; }
+.sec.alt { background: var(--tint); }
+.head { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+.head h2 { max-width: 26ch; }
+
+/* header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+.top .in { display: flex; align-items: center; gap: 20px; padding-block: 10px; }
+.brand { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
+.brand span { color: var(--brand-text); }
+.nav { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; min-width: 0; margin-left: auto; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { white-space: nowrap; text-decoration: none; color: var(--muted); font-weight: 600; font-size: 0.88rem; padding: 7px 11px; border-radius: 999px; }
+.nav a:hover { color: var(--ink); }
+.nav a.on { color: var(--btn-ink); background: var(--btn); }
+@media (max-width: 760px) { .top .in { flex-direction: column; align-items: stretch; gap: 4px; } .nav { margin-left: 0; } }
+
+/* hero */
+.hero { background: var(--hero); color: var(--hero-ink); padding-top: 44px; overflow: hidden; }
+.hero .grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 28px; align-items: center; }
+.hero .eyebrow { color: var(--hero-soft); }
+.hero .copy { display: flex; flex-direction: column; gap: 20px; padding-bottom: 48px; min-width: 0; }
+.hero .lede { color: var(--hero-soft); font-size: 1.12rem; }
+.hero .scene { min-width: 0; padding-bottom: 26px; }
+.hero .scene svg { display: block; width: 100%; height: auto; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.cta { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #BF1D2B; font-weight: 700; padding: 13px 22px; border-radius: 999px; text-decoration: none; border: 2px solid #fff; }
+.cta.line { background: transparent; color: #fff; }
+.cta svg { width: 18px; height: 18px; }
+@media (max-width: 800px) { .hero .grid { grid-template-columns: minmax(0, 1fr); } .hero .copy { padding-bottom: 8px; } }
+
+/* shared bits */
+.btn { font-weight: 700; font-size: 1rem; background: var(--btn); color: var(--btn-ink); border: 0; border-radius: 999px; padding: 12px 22px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; align-self: flex-start; }
+.btn svg { width: 18px; height: 18px; }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); padding: 10px 20px; }
+.btn.small { font-size: 0.9rem; padding: 8px 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-weight: 600; font-size: 0.92rem; padding: 9px 15px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chip:hover { border-color: var(--brand); }
+.chip[aria-pressed="true"] { background: var(--btn); border-color: var(--btn); color: var(--btn-ink); }
+.tag { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 9px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); display: inline-block; }
+.tag.red { color: var(--brand-text); border-color: var(--brand); background: var(--tint); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; width: 100%; min-height: 88px; resize: vertical; }
+textarea:focus { border-color: var(--brand); }
+.label { font-family: var(--font-display); font-weight: 600; margin-bottom: 8px; display: block; }
+.note { color: var(--muted); font-size: 0.94rem; }
+.out { border-top: 1px solid var(--line); padding-top: 10px; margin-top: auto; }
+.out .eyebrow { display: block; color: var(--brand-text); margin-bottom: 2px; }
+
+/* pillars */
+.cards3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.cards3 .card { padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.cards3 .glyph { width: 52px; height: 52px; }
+@media (max-width: 760px) { .cards3 { grid-template-columns: 1fr; } }
+
+/* program route */
+.jroute { display: flex; align-items: flex-start; margin-bottom: 18px; }
+.jroute .node { display: flex; flex-direction: column; align-items: center; gap: 8px; flex: none; width: 118px; text-align: center; background: none; border: 0; cursor: pointer; color: var(--muted); padding: 0; }
+.jroute .dot { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.85rem; transition: all 0.25s; color: var(--muted); }
+.jroute .lbl { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.3; }
+.jroute .lbl b { display: block; font-weight: 500; color: var(--ink); font-size: 0.74rem; }
+.jroute .node:hover .dot { border-color: var(--brand); }
+.jroute .node.now .dot { background: var(--btn); border-color: var(--btn); color: var(--btn-ink); transform: scale(1.12); }
+.jroute .seg { flex: 1; height: 40px; display: flex; align-items: center; min-width: 6px; }
+.jroute .seg i { display: block; width: 100%; border-top: 3px dashed var(--brand); }
+@media (max-width: 640px) { .jroute .node { width: 62px; } .jroute .lbl { font-size: 0.58rem; } .jroute .lbl b { font-size: 0.64rem; } .jroute .dot { width: 34px; height: 34px; } }
+.jcard { padding: clamp(18px, 4vw, 28px); display: flex; flex-direction: column; gap: 20px; }
+.jcard .cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.jcard .cols .eyebrow { display: block; margin-bottom: 4px; color: var(--brand-text); }
+.jcard .beats { border-top: 1px solid var(--line); padding-top: 16px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.jcard .beats b { font-family: var(--font-display); }
+.jcard .beats span { display: block; color: var(--muted); font-size: 0.94rem; }
+.jcard .tasks { border-top: 1px solid var(--line); padding-top: 16px; }
+.jcard .tasks .eyebrow { color: var(--brand-text); display: block; margin-bottom: 10px; }
+.jcard .tasks ol { margin: 0; padding: 0; list-style: none; counter-reset: t; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+.jcard .tasks li { counter-increment: t; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; align-items: start; }
+.jcard .tasks li::before { content: counter(t); width: 26px; height: 26px; border-radius: 50%; background: var(--tint); color: var(--brand-text); font-family: var(--font-mono); font-size: 0.8rem; display: grid; place-items: center; border: 1px solid var(--brand); }
+.jcard .tasks li b { font-family: var(--font-display); display: block; }
+.jcard .tasks li span { color: var(--muted); font-size: 0.94rem; display: block; }
+@media (max-width: 760px) { .jcard .tasks ol { grid-template-columns: 1fr; } }
+.jcard .pend { background: var(--tint); border: 1.5px dashed var(--brand); border-radius: 10px; padding: 12px 14px; }
+@media (max-width: 760px) { .jcard .cols, .jcard .beats { grid-template-columns: 1fr; } }
+.through { margin-top: 16px; padding: 20px 22px; display: grid; grid-template-columns: minmax(0, 0.5fr) repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.through h4 { font-family: var(--font-display); font-size: 1rem; margin-bottom: 4px; }
+.through p { font-size: 0.94rem; color: var(--muted); }
+@media (max-width: 860px) { .through { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: no-preference) { .jcard { animation: fadeup 0.35s ease-out; } }
+
+/* stories */
+.stories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: stretch; }
+.story { padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.story h3 { font-size: 1.25rem; }
+.story .sb .eyebrow { display: block; margin-bottom: 3px; }
+.story .sb.val .eyebrow { color: var(--brand-text); }
+.story .sb.use { margin-top: auto; border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+.story blockquote { margin: 0; border-left: 4px solid var(--brand); padding-left: 12px; font-style: italic; }
+@media (max-width: 800px) { .stories { grid-template-columns: 1fr; } }
+
+/* weekly tasks */
+.wk { padding: clamp(18px, 4vw, 28px); display: flex; flex-direction: column; gap: 18px; }
+.wk .rows { display: flex; flex-direction: column; }
+.wk .row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); }
+.wk .row:first-child { border-top: 0; padding-top: 0; }
+.wk .row .eyebrow { color: var(--brand-text); padding-top: 3px; }
+.wk .row.main { background: var(--tint); border: 1.5px solid var(--brand); border-radius: 10px; padding: 14px; margin-bottom: 4px; }
+.wk .row.main p { font-family: var(--font-display); font-size: 1.12rem; font-weight: 600; line-height: 1.35; }
+@media (max-width: 640px) { .wk .row { grid-template-columns: 1fr; gap: 4px; } }
+@media (prefers-reduced-motion: no-preference) { .wk { animation: fadeup 0.35s ease-out; } }
+.rhythm { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 20px; }
+.rhythm div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+.rhythm b { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--brand-text); font-weight: 500; display: block; margin-bottom: 4px; }
+.rhythm span { font-size: 0.94rem; color: var(--muted); }
+@media (max-width: 760px) { .rhythm { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* situation widget */
+.steps { display: flex; gap: 6px; padding: 14px 18px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+.steps .st { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; padding: 6px 10px; border-radius: 999px; }
+.steps .st b { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid currentColor; display: grid; place-items: center; font-weight: 500; }
+.steps .st.now { color: var(--btn-ink); background: var(--btn); }
+.steps .st.done { color: var(--ok); }
+@media (max-width: 520px) { .steps { gap: 4px; padding: 12px; } .steps .st:not(.now) .sl { display: none; } .steps .st:not(.now) { padding: 6px 4px; } }
+.body { padding: clamp(18px, 4vw, 30px); display: flex; flex-direction: column; gap: 20px; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.setting { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+.situation { font-size: 1.1rem; }
+.q { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; }
+.opts { display: flex; flex-direction: column; gap: 10px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.opt { position: relative; }
+.opt input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; z-index: 1; }
+.opt .box { display: flex; gap: 12px; align-items: flex-start; border: 1.5px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--bg); transition: border-color 0.15s, background 0.15s; }
+.key { font-family: var(--font-mono); font-size: 0.8rem; width: 24px; height: 24px; flex: none; display: grid; place-items: center; border: 1.5px solid var(--muted); border-radius: 50%; color: var(--muted); }
+.tx { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.pc { font-size: 0.9rem; color: var(--muted); display: grid; gap: 2px; }
+.pc b { color: var(--ink); font-weight: 600; }
+.opt input:hover + .box { border-color: var(--brand); }
+.opt input:checked + .box { border-color: var(--brand); background: var(--tint); box-shadow: inset 0 0 0 1px var(--brand); }
+.opt input:checked + .box .key { background: var(--btn); border-color: var(--btn); color: var(--btn-ink); }
+.opt input:focus-visible + .box { outline: 3px solid var(--brand); outline-offset: 2px; }
+.own { background: var(--bg); border: 1.5px dashed var(--muted); border-radius: 10px; padding: 12px 14px; }
+.own .eyebrow { display: block; margin-bottom: 4px; }
+.own p { font-style: italic; overflow-wrap: anywhere; }
+.err { color: var(--far); font-size: 0.9rem; min-height: 1.2em; }
+.rlist { display: flex; flex-direction: column; gap: 10px; }
+.ropt { display: flex; gap: 12px; align-items: flex-start; border: 1.5px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--bg); }
+.ropt.mine { border-color: var(--brand); background: var(--tint); }
+.ropt .tx > span:not(.pills):not(.pc) { overflow-wrap: anywhere; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; border: 1.5px solid currentColor; white-space: nowrap; }
+.pill.best { color: var(--ok); } .pill.part { color: var(--warn); } .pill.far { color: var(--far); } .pill.you { color: var(--brand-text); }
+.happened { border-left: 4px solid var(--brand); padding-left: 14px; display: flex; flex-direction: column; gap: 8px; }
+.happened .eyebrow { color: var(--brand-text); }
+.looks { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.looks .eyebrow { display: block; margin-bottom: 4px; }
+.room { background: var(--tint); border: 1.5px dashed var(--brand); border-radius: 10px; padding: 12px 14px; }
+.room .eyebrow { display: block; margin-bottom: 4px; color: var(--brand-text); }
+.msub { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* why, safe, role, outcome */
+.fours { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.fours .card { padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 700px) { .fours { grid-template-columns: 1fr; } }
+.split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.split .card { padding: 24px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.split ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 700px) { .split { grid-template-columns: 1fr; } }
+.total { margin-top: 18px; color: var(--muted); max-width: 70ch; }
+
+/* roadmap + pilot */
+.phases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 28px; }
+.phases .card { padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+.phases .card.first { border-color: var(--brand); box-shadow: inset 0 0 0 1px var(--brand); }
+@media (max-width: 760px) { .phases { grid-template-columns: 1fr; } }
+.pilot { background: var(--deep); color: var(--deep-ink); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px; padding: clamp(22px, 5vw, 40px); display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; }
+.pilot .eyebrow { color: var(--deep-muted); }
+.pilot h3 { margin: 8px 0 12px; font-size: clamp(1.4rem, 3.2vw, 1.9rem); }
+.pilot p { color: var(--deep-muted); }
+.pilot ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.pilot li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 12px; border-top: 1px solid rgba(255,255,255,0.18); padding-top: 12px; }
+.pilot li b { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: #FFB3BA; font-weight: 500; }
+@media (max-width: 800px) { .pilot { grid-template-columns: 1fr; } }
+
+/* next + footer */
+.next { background: var(--hero); color: var(--hero-ink); }
+.next .in { padding-block: clamp(44px, 7vw, 72px); display: flex; flex-direction: column; gap: 18px; }
+.next h2 { max-width: 20ch; }
+.next p { color: var(--hero-soft); max-width: 58ch; }
+.next .eyebrow { color: var(--hero-soft); }
+footer { padding-block: 28px 52px; color: var(--muted); font-size: 0.88rem; }
+footer .in { display: flex; flex-direction: column; gap: 12px; }
+footer ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+
+/* motion */
+.flow { stroke-dasharray: 3 11; }
+@media (prefers-reduced-motion: no-preference) {
+  .flow { animation: flowdash 1.2s linear infinite; }
+  @keyframes flowdash { to { stroke-dashoffset: -28; } }
+  .cta svg.bounce { animation: bob 1.1s ease-in-out infinite; }
+  @keyframes bob { 0%, 100% { transform: translateY(-2px); } 50% { transform: translateY(3px); } }
+  .body > * { animation: fadeup 0.35s ease-out both; }
+  @keyframes fadeup { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+}
+.close { border: 1.5px solid var(--brand); background: var(--tint); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.close .eyebrow { color: var(--brand-text); }
+.meter { display: flex; gap: 6px; }
+.meter i { flex: 1; height: 8px; border-radius: 4px; background: var(--line); }
+.meter i.on { background: var(--brand); }
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v14M6 12l6 7 6-7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h14M12 6l7 6-7 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top gut">
+  <div class="col in">
+    <div class="brand">Culture in Practice <span>/ Aayina</span></div>
+  </div>
+</header>
+
+<section class="hero gut">
+  <div class="col">
+    <div class="grid">
+      <div class="copy">
+        <span class="eyebrow">A small gift for Eternal's people team &middot; from Aayina Therapy</span>
+        <h1>Three real moments from Eternal. What would you do?</h1>
+        <p class="lede">We have been thinking about how new joiners, in every office, can come to feel your values and not only hear them. This is one small piece of what we have prepared.</p>
+        <div class="actions"><a class="cta" href="#try" data-go="try">Try the first moment <svg class="bounce"><use href="#i-down"/></svg></a></div>
+      </div>
+      <div class="scene">
+        <svg viewBox="0 0 560 300" role="img" aria-label="A question mark branching into four options, with pulses travelling along each path">
+          <path id="b1" class="flow" d="M150 150 C 220 150, 230 60, 330 60" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <path id="b2" class="flow" d="M150 150 C 220 150, 240 115, 330 115" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <path id="b3" class="flow" d="M150 150 C 220 150, 240 185, 330 185" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <path id="b4" class="flow" d="M150 150 C 220 150, 230 240, 330 240" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <circle data-path="b1" data-speed="0.00018" data-offset="0" r="6" fill="#fff"/>
+          <circle data-path="b2" data-speed="0.00018" data-offset="0.3" r="6" fill="#FFE9EB"/>
+          <circle data-path="b3" data-speed="0.00018" data-offset="0.55" r="6" fill="#fff"/>
+          <circle data-path="b4" data-speed="0.00018" data-offset="0.8" r="6" fill="#FFE9EB"/>
+          <circle cx="120" cy="150" r="38" fill="#fff"/>
+          <text x="120" y="167" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="48" fill="#BF1D2B">?</text>
+          <g font-family="IBM Plex Mono, monospace" font-size="18" font-weight="500" text-anchor="middle">
+            <circle cx="355" cy="60" r="22" fill="#fff"/><text x="355" y="66" fill="#BF1D2B">A</text>
+            <circle cx="355" cy="115" r="22" fill="#fff"/><text x="355" y="121" fill="#BF1D2B">B</text>
+            <circle cx="355" cy="185" r="22" fill="#fff"/><text x="355" y="191" fill="#BF1D2B">C</text>
+            <circle cx="355" cy="240" r="22" fill="#fff"/><text x="355" y="246" fill="#BF1D2B">D</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt gut" id="try">
+  <div class="col">
+    <div class="head">
+      <span class="eyebrow">A first taste</span>
+      <h2>Choose. Say why. See what happened.</h2>
+      <p class="lede">Pick the option closest to what you would do, or write your own. Say why, and which value you think it was based on. Then see what the company did and how close you were. Nothing you type is saved or sent.</p>
+    </div>
+    <div class="chips" id="m-chips" style="margin-bottom:18px"></div>
+    <p class="note" id="m-path" style="margin-bottom:14px"></p>
+    <article class="card" id="m-card"></article>
+  </div>
+</section>
+
+<section class="next gut" id="next">
+  <div class="col in">
+    <span class="eyebrow">This is just the start</span>
+    <h2>There is a whole program behind this.</h2>
+    <p>This is one small piece of something we have prepared for Eternal's new joiners, from the first conversations to the first 90 days. We have a lot more for you, and we would love to show you.</p>
+    <p>Imagine receiving a database of where your people stand on each value, shown as group themes and never as individuals, with your own real culture stories built into every scenario.</p>
+    <p>At Aayina we believe in quality over quantity. Every scenario is written with your people, from your own stories, and held with care.</p>
+    <div class="actions"><a class="cta" href="mailto:connect@aayinatherapy.com">connect@aayinatherapy.com <svg><use href="#i-right"/></svg></a><a class="cta line" href="tel:+919289905630">+91 92899 05630</a></div>
+    <p style="font-size:0.94rem">Ananya Bansal and Akritti Agarwal, co-founders, Aayina Therapy. <a href="https://aayinatherapy.com" target="_blank" rel="noopener" style="color:#fff">aayinatherapy.com</a></p>
+  </div>
+</section>
+
+<footer class="gut">
+  <div class="col in">
+    <p>Prepared by Aayina Therapy on its own initiative, from public sources only. It is not affiliated with or endorsed by Eternal. The moments are summarised from public reporting, and the values behind them are our reading.</p>
+    <ul>
+      <li><a href="https://www.businessinsider.in/zomato-just-shut-up-a-bigoted-customer-in-less-than-ten-words/articleshow/70462499.cms" target="_blank" rel="noopener">Business Insider India, the 2019 rider and customer incident</a></li>
+      <li><a href="https://www.etvbharat.com/en/!business/will-roll-back-pure-veg-mode-in-case-of-negative-social-repercussions-zomato-ceo-enn24031908511" target="_blank" rel="noopener">ETV Bharat, the pure veg fleet and green uniform rollback</a></li>
+      <li><a href="https://officechai.com/startups/why-zomato-has-no-notice-periods-and-no-probation-periods/" target="_blank" rel="noopener">OfficeChai, why Zomato has no notice period and no probation period</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function $(s, r) { return (r || document).querySelector(s); }
+  function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function icon(id) { return '<svg aria-hidden="true"><use href="#' + id + '"/></svg>'; }
+  function goTo(id) { var el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" }); }
+
+  $$("a[data-go]").forEach(function (a) { a.addEventListener("click", function (e) { e.preventDefault(); goTo(a.getAttribute("data-go")); }); });
+  /* hero pulses */
+  $$("[data-path]").forEach(function (el) {
+    var path = document.getElementById(el.getAttribute("data-path"));
+    if (!path || !path.getTotalLength) return;
+    var len = path.getTotalLength();
+    var speed = parseFloat(el.getAttribute("data-speed")) || 0.0002;
+    var off = parseFloat(el.getAttribute("data-offset")) || 0;
+    function place(t) { var p = path.getPointAtLength(t * len); el.setAttribute("cx", p.x.toFixed(1)); el.setAttribute("cy", p.y.toFixed(1)); }
+    if (REDUCED) { place(0.5); return; }
+    function tick(now) { place(((now * speed) + off) % 1); requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  });
+
+
+  var TAGS = { best: "Closest", part: "Partly there", far: "Further away" };
+  var VALUES = ["Listening and correcting fast", "Values over revenue", "Trust and treating people as adults", "Intellectual honesty", "Ownership and speed", "Looking after the people doing the work"];
+  var MOMENTS = [
+    {
+      tab: "The rider and the customer", value: "Values over revenue", source: "Public record", setting: "",
+      situation: "A customer cancels his order after seeing the delivery partner's name. He says he does not want a rider of that faith, and asks you for a different rider or a full refund. Your rider is two streets away with the food. Your team is watching the chat.",
+      q: "What do you do?",
+      opts: [
+        { t: "Move the order to another rider and keep the customer happy.", tag: "far", why: "It solves tonight's order and quietly tells your rider that his faith was a fair reason to be swapped out." },
+        { t: "Refund him in full and close the chat.", tag: "part", why: "You do not swap the rider, but the customer walks away having been rewarded for the request." },
+        { t: "Decline both. Explain politely that the rider stays on the order, and tell the rider you have his back.", tag: "best", tagText: "Closest to what happened", why: "It costs one order. The rider and the team see what the company will not trade." },
+        { t: "Escalate to your manager and ask the customer to wait.", tag: "part", why: "The instinct to protect the rider is right. Waiting hands the call upward on a decision the desk could own." }
+      ],
+      happenedTitle: "What happened",
+      happened: "In 2019 a customer cancelled an order after learning the delivery partner was not of his faith, and asked for another rider or a refund. The company declined both and answered publicly that food does not have a religion. The founder backed the reply, saying the company was not sorry to lose business that comes in the way of its values.",
+      looks: "Whether a person will give up a sale to protect a principle, and whether they will make that call at the desk instead of passing it upward.",
+      room: "When did you last see a customer ask for something that quietly crossed a line? What did the people around you do?"
+    },
+    {
+      tab: "The green uniform", value: "Listening and correcting fast", source: "Public record", setting: "",
+      situation: "You run rider operations in a city full of gated societies. A veg-only fleet launches with green uniforms. By evening, riders say guards are stopping some of them.",
+      q: "What do you change tonight, and what do you refuse to change?",
+      opts: [
+        { t: "Keep everything. The need is real, and gate behaviour is the problem to fix.", tag: "far", p: "Customers.", c: "Riders carry the risk." },
+        { t: "Keep the veg-only fleet, make every rider look the same, and show the label only in the app.", tag: "best", tagText: "What the company did", p: "Rider safety and the service.", c: "The visible proof is gone, and some say separation still exists." },
+        { t: "Pause it in your city until you see how gates react.", tag: "part", p: "Riders.", c: "Customers wait and you learn slowly." },
+        { t: "Keep the colour and negotiate with society associations.", tag: "far", p: "The original design.", c: "Riders sit in the middle for weeks." }
+      ],
+      happenedTitle: "What happened",
+      happened: "The CEO launched it with a note promising to reverse it if it caused social harm. The next day, green uniforms were dropped and all riders wore red. The veg fleet stayed, shown only as a label in the app. His reasons were rider safety and the risk of riders being blocked or wrongly judged.",
+      cost: "The company conceded the first design was wrong within a day. The separate fleet still exists, and some critics object to that.",
+      looks: "Listening, correcting fast, and weighing rider safety against what customers asked for.",
+      room: "Who on your team would have spotted this before launch, and did anyone ask them?"
+    },
+    {
+      tab: "The notice period", value: "Trust and treating people as adults", source: "Public record", setting: "A fast-growing company. A review of HR rules.",
+      situation: "Most companies put new joiners on probation for about six months, and make anyone who resigns serve a notice of one to three months. You have noticed two things. People who have resigned often stop engaging long before their last day. And the colleagues around them, who are still engaged, get frustrated carrying the extra load. You have been asked to propose how notice and probation should work here.",
+      q: "What do you propose?",
+      opts: [
+        { t: "Keep the standard notice, and add a strict handover plan so the work stays safe.", tag: "far", p: "Continuity of work.", c: "Disengaged people stay, and engaged colleagues carry the load." },
+        { t: "Shorten notice to two weeks, and keep probation for new joiners.", tag: "part", p: "Faster exits, some safety.", c: "New joiners are still treated differently for their first months." },
+        { t: "Remove both. Treat every joiner as a full employee from day one, and let people leave when they decide to.", tag: "best", tagText: "What the company did", p: "Trust, and the engaged people around a leaver.", c: "Handover has to be built into how the work is done, because no notice period protects it." },
+        { t: "Keep notice, but let managers waive it case by case.", tag: "part", p: "Flexibility.", c: "Trust depends on who your manager is, and people have to ask to leave." }
+      ],
+      happenedTitle: "What the company has said",
+      happened: "Zomato, now Eternal, has said it has no probation period and no notice period. Employment is at will, and a new joiner is a full employee from the first day, with no separate treatment in the first months. The reasoning its HR leadership gave publicly is about people. Someone who has decided to leave has usually disengaged already, and keeping them another month mainly upsets the engaged colleagues around them. In short, people who want to be there should be there, and people who do not should be free to go.",
+      cost: "The public account explains the thinking, not the full history of how the decision was made. It is a favourable account, with no retention data, and it does not say how handovers and continuity are managed. Eternal's own people will know how this works in practice.",
+      looks: "How a rule starts from a belief about people. Here the belief is that adults can be trusted, and that holding someone who has already left helps nobody.",
+      room: "Which rules in your team assume people cannot be trusted? What would change if they assumed the opposite?"
+    }
+  ];
+  var KEYS = ["A", "B", "C", "D", "E"];
+  var STEPS = ["Choose", "Why", "See what happened"];
+  var M = { m: 0, step: 0, pick: null, own: "", why: "", val: null, err: "" };
+  function resetM() { M.step = 0; M.pick = null; M.own = ""; M.why = ""; M.val = null; M.err = ""; }
+  function renderChips() {
+    $("#m-chips").innerHTML = MOMENTS.map(function (m, i) { return '<button type="button" class="chip" data-m="' + i + '" aria-pressed="' + (M.m === i) + '">' + (i + 1) + '. ' + esc(m.tab) + '</button>'; }).join("");
+    $("#m-path").textContent = "Moment " + (M.m + 1) + " of " + MOMENTS.length + ". The full program has many more.";
+  }
+  function stepBar() {
+    return '<div class="steps" aria-label="Steps">' + STEPS.map(function (s, i) {
+      var cls = i < M.step ? "done" : (i === M.step ? "now" : "");
+      return '<span class="st ' + cls + '"><b>' + (cls === "done" ? "✓" : (i + 1)) + '</b><span class="sl">' + s + '</span></span>';
+    }).join("") + '</div>';
+  }
+  function top(m) {
+    return '<div class="tags"><span class="tag red">' + esc(m.source) + '</span></div>' +
+      (m.setting ? '<span class="setting">' + esc(m.setting) + '</span>' : '') +
+      '<p class="situation">' + esc(m.situation) + '</p>';
+  }
+  function choiceText(m) { return M.pick === 4 ? "Your own answer: " + M.own : KEYS[M.pick] + ". " + m.opts[M.pick].t; }
+  function closeness(m) {
+    var lvl = 0, label = "Your own answer", sub = "Read what happened below, then ask whether your answer protects the same thing.";
+    if (M.pick !== 4) {
+      var tg = m.opts[M.pick].tag;
+      lvl = tg === "best" ? 3 : (tg === "part" ? 2 : 1);
+      label = tg === "best" ? "Very close" : (tg === "part" ? "Partly there" : "Further away");
+      sub = tg === "best" ? "Your choice matches what the company did." : (tg === "part" ? "Part of your instinct matches. See what it protects and what it costs." : "This is a natural first reaction. See what it protects and what it costs.");
+    }
+    var vm = M.val === m.value ? "You named the value behind it: " + m.value + "." : (M.val === "Not sure" ? "Not sure is a fair answer. The value behind this moment is " + m.value + "." : "You named " + M.val + ". The value behind this moment is " + m.value + ". Worth a conversation about where they meet.");
+    var bars = ""; for (var i = 1; i <= 3; i++) bars += '<i class="' + (i <= lvl ? "on" : "") + '"></i>';
+    return '<div class="close"><span class="eyebrow">How close you were</span><div class="meter" aria-hidden="true">' + bars + '</div><p><b>' + esc(label) + '.</b> ' + esc(sub) + '</p><p><b>The value.</b> ' + esc(vm) + '</p></div>';
+  }
+  function render() {
+    var m = MOMENTS[M.m], h = stepBar() + '<div class="body">';
+    if (M.step === 0) {
+      h += top(m) + '<fieldset class="opts"><legend class="q" style="margin-bottom:8px">' + esc(m.q) + '</legend>' +
+        m.opts.map(function (o, i) {
+          return '<div class="opt"><input type="radio" name="mo" id="mo' + i + '" value="' + i + '"' + (M.pick === i ? " checked" : "") + '><label class="box" for="mo' + i + '"><span class="key">' + KEYS[i] + '</span><span class="tx"><span>' + esc(o.t) + '</span>' +
+            (o.p ? '<span class="pc"><span><b>Protects:</b> ' + esc(o.p) + '</span><span><b>Costs:</b> ' + esc(o.c) + '</span></span>' : '') + '</span></label></div>';
+        }).join("") +
+        '<div class="opt"><input type="radio" name="mo" id="mo4" value="4"' + (M.pick === 4 ? " checked" : "") + '><label class="box" for="mo4"><span class="key">E</span><span class="tx"><span>None of these. I would do something else.</span></span></label></div></fieldset>' +
+        '<div id="m-ownwrap"' + (M.pick === 4 ? "" : " hidden") + '><label class="label" for="m-own">Write your own answer</label><textarea id="m-own" placeholder="What would you really do?">' + esc(M.own) + '</textarea></div>' +
+        '<div class="err" id="m-err" role="alert">' + esc(M.err) + '</div>' +
+        '<button type="button" class="btn" id="m-next">Next: why this? ' + icon("i-right") + '</button>';
+    } else if (M.step === 1) {
+      h += '<div class="own"><span class="eyebrow">Your choice</span><p>' + esc(choiceText(m)) + '</p></div>' +
+        '<div><label class="label" for="m-why">Why this? What made you choose it?</label><textarea id="m-why" placeholder="Say it in your own words.">' + esc(M.why) + '</textarea></div>' +
+        '<div><span class="label">Which value do you think it was based on?</span><div class="chips" id="m-vals">' +
+        VALUES.concat(["Not sure"]).map(function (v) { return '<button type="button" class="chip" data-v="' + esc(v) + '" aria-pressed="' + (M.val === v) + '">' + esc(v) + '</button>'; }).join("") + '</div></div>' +
+        '<div class="err" id="m-err" role="alert">' + esc(M.err) + '</div>' +
+        '<button type="button" class="btn" id="m-next">See what happened ' + icon("i-right") + '</button>';
+    } else {
+      var last = M.m === MOMENTS.length - 1;
+      h += closeness(m) +
+        '<div class="own"><span class="eyebrow">Your answer</span><p>' + esc(choiceText(m)) + '</p><p style="margin-top:6px"><b>Why:</b> ' + esc(M.why) + '</p></div>' +
+        '<div class="rlist">' + m.opts.map(function (o, i) {
+          var mine = i === M.pick;
+          return '<div class="ropt' + (mine ? " mine" : "") + '"><span class="key">' + KEYS[i] + '</span><span class="tx"><span class="pills">' +
+            (mine ? '<span class="pill you">Your pick</span>' : '') +
+            (o.tag ? '<span class="pill ' + o.tag + '">' + esc(o.tagText || TAGS[o.tag]) + '</span>' : '') + '</span><span>' + esc(o.t) + '</span>' +
+            (o.why ? '<span class="pc">' + esc(o.why) + '</span>' : '') +
+            (o.p ? '<span class="pc"><span><b>Protects:</b> ' + esc(o.p) + '</span><span><b>Costs:</b> ' + esc(o.c) + '</span></span>' : '') + '</span></div>';
+        }).join("") + '</div>' +
+        '<div class="happened"><span class="eyebrow">' + esc(m.happenedTitle) + '</span><p>' + esc(m.happened) + '</p>' + (m.cost ? '<p><b>What to keep in mind.</b> ' + esc(m.cost) + '</p>' : '') + '</div>' +
+        '<div class="looks"><span class="eyebrow">What this looks at</span><p>' + esc(m.looks) + '</p></div>' +
+        '<div class="room"><span class="eyebrow">Question for the room</span><p>' + esc(m.room) + '</p></div>' +
+        '<div class="msub"><button type="button" class="btn ghost" id="m-again">Try again</button><button type="button" class="btn" id="m-other">' + (last ? "Back to the first moment" : "Next moment") + ' ' + icon("i-right") + '</button></div>';
+    }
+    h += '</div>';
+    $("#m-card").innerHTML = h;
+    bind();
+  }
+  function bind() {
+    var nx = $("#m-next");
+    if (M.step === 0) {
+      $("#m-own").addEventListener("input", function (e) { M.own = e.target.value; });
+      $$("input[name='mo']").forEach(function (r) { r.addEventListener("change", function () { M.pick = parseInt(r.value, 10); M.err = ""; $("#m-err").textContent = ""; $("#m-ownwrap").hidden = M.pick !== 4; if (M.pick === 4) $("#m-own").focus(); }); });
+      nx.addEventListener("click", function () {
+        if (M.pick === null) { M.err = "Pick an option, or choose None of these."; $("#m-err").textContent = M.err; return; }
+        if (M.pick === 4) { M.own = $("#m-own").value.trim(); if (M.own.length < 8) { M.err = "Write a few words about what you would do."; $("#m-err").textContent = M.err; return; } }
+        M.err = ""; M.step = 1; render();
+      });
+    } else if (M.step === 1) {
+      $("#m-why").addEventListener("input", function (e) { M.why = e.target.value; });
+      $("#m-vals").addEventListener("click", function (e) { var b = e.target.closest("[data-v]"); if (!b) return; M.val = b.getAttribute("data-v"); M.err = ""; $("#m-err").textContent = ""; $$("#m-vals [data-v]").forEach(function (c) { c.setAttribute("aria-pressed", String(c === b)); }); });
+      nx.addEventListener("click", function () {
+        M.why = $("#m-why").value.trim();
+        if (M.why.length < 8) { M.err = "Write a few words on why you chose this."; $("#m-err").textContent = M.err; return; }
+        if (!M.val) { M.err = "Pick the value you think it was based on, or Not sure."; $("#m-err").textContent = M.err; return; }
+        M.err = ""; M.step = 2; render();
+      });
+    } else {
+      $("#m-again").addEventListener("click", function () { resetM(); render(); });
+      $("#m-other").addEventListener("click", function () { M.m = (M.m + 1) % MOMENTS.length; resetM(); renderChips(); render(); goTo("try"); });
+    }
+  }
+  $("#m-chips").addEventListener("click", function (e) { var b = e.target.closest("[data-m]"); if (!b) return; M.m = parseInt(b.getAttribute("data-m"), 10); resetM(); renderChips(); render(); });
+  renderChips(); render();
+})();
+</script>
+
+</body>
+</html>
